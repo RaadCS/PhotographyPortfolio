@@ -1,16 +1,15 @@
-# React + Vite
+# Photography Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist photography portfolio website rebuilt with React and Tailwind CSS for Assignment 2. 
 
-Currently, two official plugins are available:
+## About
+This project migrates a static HTML/CSS layout into a modern React application. It focuses on component-based architecture, interactive state management, and mobile-first responsive design to showcase landscape and architectural photography.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features (Assignment 2 Requirements)
+- **Vite + React Setup:** Project scaffolded using Vite.
+- **Component Architecture:** UI divided into modular components (`Header`, `Hero`, `Gallery`, `About`, `Contact`, `LikeButton`).
+- **Stateful Filtering:** Dynamic gallery grid built with a `useState` category filter.
+- **Controlled Components:** Interactive "Like" toggle button implemented on every gallery item.
+- **Tailwind CSS:** Complete styling migration from traditional CSS to mobile-first Tailwind utility classes.
+- **Data Management:** Gallery items rendered from an external data array of objects (`data.js`).
+- **Responsive Layout:** CSS Grid and Flexbox layouts adjusted for mobile, tablet, and desktop screens without horizontal scrolling.
