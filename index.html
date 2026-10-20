@@ -1,113 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional editorial and lifestyle photography portfolio.">
-  <title>Photography Portfolio</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>
-    <nav class="navbar">
-      <a href="#" class="logo">PORTFOLIO</a>
-      <ul class="nav-links">
-        <li><a href="#gallery">Selected Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="hero-subtitle">PORTFOLIO · SAUDI ARABIA</p>
-      <h1>Saudi Arabia, in a softer light</h1>
-      <p class="hero-description">Photographs of the landscapes, architecture, and quiet details that hold a sense of home.</p>
-      <div class="hero-buttons">
-        <a href="#gallery" class="btn btn-secondary">View Work</a>
-        <a href="#contact" class="btn btn-primary">Book a Shoot</a>
-      </div>
-    </section>
-    <section id="gallery" class="section gallery-section">
-      <div class="section-header">
-        <h2>Selected Work</h2>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1777924961767-654036d5e195?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Desert landscape with a town nestled in the valley" width="800" height="1000">
-          <p class="image-caption">Desert landscape with a town nestled in the valley - Al Ula Saudi Arabia</p>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1590959914819-b767b9fe4cfb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Traditional mud brick architecture with a tall tower reflected in a ground puddle" width="800" height="600">
-          <p class="image-caption">Traditional mud brick architecture with a tall tower reflected in a ground puddle - Ushaiqir, Saudi Arabia</p>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1687372984995-1b567ae295c7?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="A pyramid in the desert with a sky background" width="800" height="1000">
-          <p class="image-caption">A pyramid in the desert with a sky background - Al Ula - Saudi Arabia</p>
-        </div>
-        <div class="gallery-item">
-          <img src="https://plus.unsplash.com/premium_photo-1697729749013-d5263b662999?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="MODERN COASTAL SKYLINE — JEDDAH, SAUDI ARABIA" width="800" height="600">
-          <p class="image-caption">MODERN COASTAL SKYLINE — JEDDAH, SAUDI ARABIA</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about-section">
-      <div class="about-container">
-        <div class="about-text">
-          <h2>About the Artist</h2>
-          <p>I photograph Saudi Arabia through its landscapes, architecture, and everyday details. Drawn to warm light and traces of time, I make images that feel rooted in place and quietly personal.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-header">
-        <h2>Inquiries & Bookings</h2>
-        <p class="section-subtitle">Have a place, person, or project in mind? I’d love to hear about it.</p>
-      </div>
-
-      <form action="#" method="post" class="contact-form">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required placeholder="Name">
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required placeholder="name@example.com">
-        </div>
-
-        <div class="form-group">
-          <label for="session-type">Session Type</label>
-          <input type="text" id="session-type" name="session_type" placeholder="Editorial, Architecture, Lifestyle">
-        </div>
-
-        <div class="form-group">
-          <label for="preferred-date">Preferred Month / Date</label>
-          <input type="date" id="preferred-date" name="preferred_date">
-        </div>
-
-        <div class="form-group">
-          <label for="message">Project Details</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Describe your vision, location, or scope..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Send Inquiry</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Raad Al-nashri. All rights reserved.</p>
-  </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photographyportfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-main font-body overflow-x-hidden;
+}
